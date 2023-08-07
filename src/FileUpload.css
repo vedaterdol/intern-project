@@ -1,0 +1,39 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h3{
+    color: red;
+    font-weight: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 20px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 33.33%;
+  }
+
+  button {
+    margin:5px;  
+  }
+
+  input {
+    margin:5px
+  }
+
+  label {
+    color: red;
+  }
+
+

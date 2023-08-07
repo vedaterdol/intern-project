@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FileUpload from './components/FileUpload';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PdksOutput from './components/PdksOutput';
+import GunSayisiOutput from './components/GunSayisiOutput';
+import ExcelComparison from './components/ExcelComparison';
+import PdksIstOutput from './components/PdksIstOutput';
+import ExcelComparisonIst from './components/ExcelComparisonIst';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FileUpload />} />
+        <Route path="/pdksOutput" element={<PdksOutput />} />
+        <Route path="/gunSayisiOutput" element={<GunSayisiOutput />} />
+        <Route path="/excelComparison" element={<ExcelComparison />} />
+        <Route path="/pdksIstOutput" element={<PdksIstOutput />} />
+        <Route path="/excelComparisonIst" element={<ExcelComparisonIst />} />
+
+
+
+
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
